@@ -6,7 +6,7 @@
 /*   By: calleaum <calleaum@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/03 12:46:52 by calleaum          #+#    #+#             */
-/*   Updated: 2025/09/03 12:57:53 by calleaum         ###   ########.fr       */
+/*   Updated: 2025/09/29 14:02:43 by calleaum         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ void	identify(Base &p)
 {
 	try
 	{
-		(void)dynamic_cast<A&>(p);
+    (void)dynamic_cast<A&>(p);
 		std::cout << "A" << std::endl;
 	}
 	catch (...)

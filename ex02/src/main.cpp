@@ -6,7 +6,7 @@
 /*   By: calleaum <calleaum@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/03 08:02:35 by calleaum          #+#    #+#             */
-/*   Updated: 2025/09/03 15:05:42 by calleaum         ###   ########.fr       */
+/*   Updated: 2025/09/29 13:57:37 by calleaum         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int main()
 {
-	int SIZE = 5;
+	int SIZE = 6;
 	Base	*tab[SIZE];
 
 	std::srand(std::time(0));

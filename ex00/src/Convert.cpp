@@ -6,7 +6,7 @@
 /*   By: calleaum <calleaum@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/03 08:02:33 by calleaum          #+#    #+#             */
-/*   Updated: 2025/09/03 11:46:46 by calleaum         ###   ########.fr       */
+/*   Updated: 2025/09/29 14:18:01 by calleaum         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,16 @@ void Convert::convert(const std::string &input)
 	bool	hasOverflow = (errno == ERANGE);
 	long	longValue = static_cast<long>(value);
 
+
+	if (input.length() == 1 && !std::isdigit(input[0]))
+	{
+		char c = input[0];
+		std::cout << "char: '" << c << "'" << std::endl;
+		std::cout << "int: " << static_cast<int>(c) << std::endl;
+		std::cout << "float: " << std::fixed << std::setprecision(1) << static_cast<float>(c) << "f" << std::endl;
+		std::cout << "double: " << std::fixed << std::setprecision(1) << static_cast<double>(c) << std::endl;
+		return;
+	}
 	// to char
 	std::cout << "char: ";
 	if (!isValidNumber || longValue < CHAR_MIN || longValue > CHAR_MAX)
